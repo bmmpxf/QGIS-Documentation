@@ -67,11 +67,12 @@ won't do anything at all if you don't set it up first.
 - :guilabel:`Direction`: :guilabel:`Two-way direction`
 - :guilabel:`Speed`: :guilabel:`60`
 
+* Click :guilabel:`OK`.
 
 |basic| |FA| Use the Tool
 -------------------------------------------------------------------------------
 
-Find two points, on roads, on your map. They do not need to have any
+Find two points on roads on your map. They do not need to have any
 significance, but they should be connected by roads and separated by a
 reasonable distance:
 
@@ -110,18 +111,18 @@ reasonable distance:
 .. image:: /static/training_manual/vector_analysis/select_by_rectangle.png
    :align: center
 
-* Select any main roads in urban - but not residential - areas:
+* Select any main roads in urban (but not residential) areas:
 
 .. image:: /static/training_manual/vector_analysis/60_roads_selected.png
    :align: center
 
-(To select more than one road, hold the :kbd:`ctrl` button and drag a box
+(To select more than one road, hold the :kbd:`Ctrl` key and drag a box
 across any road that you want to include in the selection.)
 
 * In the attribute table, select :guilabel:`Show selected features`.
 
-    .. image:: /static/training_manual/vector_analysis/show_selected.png
-       :align: center
+.. image:: /static/training_manual/vector_analysis/show_selected.png
+   :align: center
 
 * Set the :kbd:`SPEED` value for all the selected streets to :kbd:`60`:
 
@@ -181,7 +182,6 @@ meet each other. If they're not quite touching, either fix them by modifying
 the features, or set the :guilabel:`Topology tolerance` in the plugin's
 settings. If they're passing over each other without intersecting, use
 the :guilabel:`Split features` tool to "split" roads at their intersections:
-
 |mActionSplitFeatures|
 
 Remember that the :guilabel:`Split features` tool only works in edit mode on

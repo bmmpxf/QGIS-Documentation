@@ -14,8 +14,10 @@ suitable plots.
 * Open the map in which you did the vector analysis earlier
   (:kbd:`analysis.qgs`).
 * In the :guilabel:`Layers list`, enable these layers:
-- :guilabel:`hillshade`,
-- :guilabel:`solution` (or :guilabel:`buildings_over_100`)
+
+  * :guilabel:`hillshade`,
+  * :guilabel:`solution` (or :guilabel:`buildings_over_100`)
+
 * In addition to these layers, which should already be loaded in the map from
   when you worked on it before, also add the :kbd:`suitable_terrain.shp`
   dataset.

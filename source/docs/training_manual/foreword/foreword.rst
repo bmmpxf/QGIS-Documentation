@@ -15,7 +15,7 @@ but rather aims to be a generic text (although we used QGIS in all examples)
 for someone learning about GIS. There is also the QGIS manual which provides a
 detailed functional overview of the QGIS application. However, it is not
 structured as a tutorial, but rather as a reference guide. At Linfiniti
-Consulting CC. we frequently run training courses and have realised that a
+Consulting CC. we frequently run training courses and have realized that a
 third resource is needed - one that leads the reader sequentially through
 learning the key aspects of QGIS in a trainer-trainee format - which prompted
 us to produce this work.
@@ -32,9 +32,10 @@ License
 
 The Free Quantum GIS Training Manual by Linfiniti Consulting CC. is licensed
 under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
-License.  Based on a work at https://github.com/qgis/QGIS-Training-Manual.
-Permissions beyond the scope of this license may be available at
-https://github.com/qgis/QGIS-Training-Manual/blob/master/index.rst.
+License.  Based on a work at
+https://github.com/qgis/QGIS-Documentation/tree/master/source/docs/training_manual.
+Permissions beyond the scope of this license may be available there as well.
+https://github.com/qgis/QGIS-Documentation/tree/master/source/docs/training_manual/
 
 We have published this QGIS training manual under a liberal license that allows
 you to freely copy, modify and redistribute this work. A complete copy of the 
@@ -53,7 +54,7 @@ guidelines are as follows:
 * If you translate this document in its entirety, you may add your name to the 
   authors list in the form "Translated by Joe Bloggs".
 * If you sponsor a module or lesson, you may request the author to include an
-  acknowledgement in the beginning of each lesson contributed, e.g.:
+  acknowledgment in the beginning of each lesson contributed, e.g.:
 
 .. note:: This lesson was sponsored by MegaCorp.
 
@@ -61,9 +62,9 @@ guidelines are as follows:
   at office@linfiniti.com and we will advise you if what you intend doing is
   acceptable.
 * If you publish this work under a self publishing site such as
-  http:://lulu.com we request that you donate the profits to the QGIS project.
-* You may not commercialise this work, except with the expressed permission of
-  the authors. To be clear, by commercialisation we mean that you may not sell
+  http://lulu.com we request that you donate the profits to the QGIS project.
+* You may not commercialize this work, except with the expressed permission of
+  the authors. To be clear, by commercialization we mean that you may not sell
   for profit, create commercial derivative works (e.g. selling content for use
   as articles in a magazine). The exception to this is if all the profits are
   given to the QGIS project. You may (and we encourage you to do so) use this
@@ -120,13 +121,8 @@ from the following sources:
 Latest Version
 --------------
 
-You can always obtain the latest version of this document by visiting our `home
-page <http://readthedocs.org/builds/the-free-qgis-training-manual/>`_ which is
-kindly hosted by http://readthedocs.org.
-
-.. note:: There are links to PDF and epub versions of the documentation in the
-   lower right hand corner of the above mentioned home page.
-
+You can always obtain the latest version of this document by visiting
+`http://docs.qgis.org`_.
 
 
 Tim Sutton, May 2012

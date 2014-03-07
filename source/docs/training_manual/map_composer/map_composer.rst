@@ -50,7 +50,7 @@ yours is as well.
 
 - :guilabel:`Size`: :kbd:`A4 (210x297mm)`
 - :guilabel:`Orientation`: :kbd:`Landscape`
-- :guilabel:`Quality`: :kbd:`300dpi`
+- :guilabel:`Quality`: :kbd:`300 dpi`
 
 Now you've got the page layout the way you wanted it, but this page is still
 blank. It clearly lacks a map. Let's fix that!
@@ -116,7 +116,7 @@ Now your map is looking good on the page, but your readers/users are not being
 told what's going on yet. They need some context, which is what you'll provide
 for them by adding map elements. First, let's add a title.
 
-* Click on this button: |mActionLabel|
+* Click on the :guilabel:`Add new label button`: |mActionLabel|
 
 * Click on the page, above the map, and a label will appear at the top of the
   map.
@@ -127,13 +127,11 @@ for them by adding map elements. First, let's add a title.
 As you move the title, you'll notice that guidelines appear to help you
 position the title in the center of the page.
 
-However, there is also a tool to help position the title relative to the map
-(not the page):
-
-|mActionAlignLeft|
+However, there is also an align tool to help position the title relative to the
+map (not the page): |mActionAlignLeft|
 
 * Click the map to select it.
-* Hold in :kbd:`shift` on your keyboard and click on the label so that both the
+* Hold :kbd:`Shift` on your keyboard and click on the label so that both the
   map and the label are selected.
 * Look for the :guilabel:`Align` button |mActionAlignLeft| and click on the
   dropdown arrow next to it to reveal the positioning options and click
@@ -145,7 +143,7 @@ However, there is also a tool to help position the title relative to the map
 To make sure that you don't accidentally move these elements around now that
 you've aligned them:
 
-* Right-click on both the map and the label.
+* Right-click on both the map and the label to lock them.
 
 A small lock icon will appear in the corner to tell you that an element can't
 be dragged right now. You can always right-click on an element again to unlock
@@ -192,7 +190,7 @@ actually mean. In some cases, like the place names, this is quite obvious. In
 other cases, it's more difficult to guess, like the colors of the farms. Let's
 add a new legend.
 
-* Click on this button: |mActionAddLegend|
+* Click on the :guilabel:`Add new legend` button: |mActionAddLegend|
 
 * Click on the page to place the legend, and move it to where you want it:
 
@@ -217,8 +215,9 @@ You can also rename items.
 
 * Rename the layers to :kbd:`Places`, :kbd:`Roads and Streets`,
   :kbd:`Surafce Water`, and :kbd:`Rivers`.
-* Set :kbd:`landuse` to :guilabel:`Hidden`, then click the down arrow and edit
-  each category to name them on the legend. You can also reorder the items:
+* Set :kbd:`landuse` to :guilabel:`Hidden` (it will say :guilabel:`Subgroup`
+  initially), then click the down arrow and edit each category to name them on 
+  the legend. You can also reorder the items:
 
 .. image:: /static/training_manual/map_composer/categories_reordered.png
    :align: center
@@ -235,7 +234,8 @@ move and resize the legend and or map. This is the result:
 .. note::  Did you remember to save your work often?
 
 Finally the map is ready for export! You'll see the export buttons near the top
-left corner of the :guilabel:`Composer` window:
+left corner of the :guilabel:`Composer` window (you can also navigate to these 
+options from the :guilabel:`Composer` menu):
 
   |mActionFilePrint| |mActionSaveMapAsImage| |mActionSaveAsSVG|
   |mActionSaveAsPDF|

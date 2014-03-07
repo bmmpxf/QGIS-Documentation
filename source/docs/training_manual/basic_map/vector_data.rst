@@ -127,7 +127,7 @@ For example, this layer order...
    :align: center
 
 ... would result in roads and places being hidden as they run *underneath*
-urban areas.
+the landuse layer.
 
 To resolve this problem:
 

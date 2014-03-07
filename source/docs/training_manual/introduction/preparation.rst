@@ -27,7 +27,9 @@ Let's get started right away!
 
 * Open QGIS. You will have a new, blank map.
 
-* Look for the :guilabel:`Add Vector Layer` button: |mActionNewVectorLayer|
+* Look for the :guilabel:`Add Vector Layer` button: |mActionNewVectorLayer|. You 
+  can also navigate to the :guilabel:`Layer` menu and select 
+  :guilabel:`Add Vector Layer`
 
 * Click on it to open the following dialog:
 

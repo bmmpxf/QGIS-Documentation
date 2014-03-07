@@ -19,13 +19,14 @@ allow your mouse cursor to snap to other objects while you digitize. To set
 snapping options:
 
 * Navigate to the menu entry :menuselection:`Settings --> Snapping Options...`.
-* Set up your :guilabel:`Snapping options` dialog as shown:
+* Set up your :guilabel:`Snapping options` dialog for the :guilabel:`landuse` layer
+  as shown, with :guilabel:`Mode` set to :kbd:`to vertex and segment`, and a 
+  :guilabel:`Tolerance` of :kbd:`4` pixels. Ensure that the box in the 
+  :guilabel:`Avoid Int.` column is checked (set to true).
 
 .. image:: /static/training_manual/create_vector_data/set_snapping_options.png
    :align: center
 
-* Ensure that the box in the :guilabel:`Avoid Int.` column is checked (set to
-  true).
 * Click :guilabel:`OK` to save your changes and leave the dialog.
 * Enter edit mode with the :guilabel:`landuse` layer selected.
 * Check under :menuselection:`View --> Toolbars` to make sure that your
@@ -113,7 +114,7 @@ This is the :guilabel:`Simplify Feature` tool:
 
 This allows you to reduce the amount of nodes in complex features.
 
-* Click :guilabel:`Ok`
+* Click :guilabel:`OK`.
 
 Notice what the tool does to the topology. The simplified polygon is now no longer
 touching the adjacent polygons as it should. This shows that this tool is

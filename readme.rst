@@ -1,20 +1,17 @@
 QGIS 2.0 Documentation
 **********************
 
-QGIS Documentation is build from corresponding branches.
+QGIS Documentation is built from corresponding branches.
 
-Stable documentation is on http://docs.qgis.org/2.0
-
-Testing is http://docs.qgis.org/testing
-
-And QGIS 1.8 docs http://docs.qgis.org/1.8
+Stable documentation: http://docs.qgis.org/2.0
+Testing: http://docs.qgis.org/testing
+QGIS 1.8 docs: http://docs.qgis.org/1.8
 
 Translations are also available via the docs.qgis.org language path:
 for example for the German language: http://docs.qgis.org/2.0/de
 
 PDF versions of the manual are available here: http://docs.qgis.org/2.0/pdf/ 
 http://docs.qgis.org/1.8/pdf/ and http://docs.qgis.org/testing/pdf
-
 
 
 Building the QGIS Documentation
@@ -31,7 +28,7 @@ The Website version is the canonical one.
 
 Building is only tested on Linux systems using make.
 
-To be able to run localisation targets you will need Sphinx 1.2b3 which comes with pip. 
+To be able to run localization targets you will need Sphinx 1.2b3 which comes with pip. 
 Sphinx coming with most distro's is just 1.1.3. You will get an gettext error with those.
 
 Best to run the make file in a virtual env ( http://www.virtualenv.org/ ):
@@ -81,14 +78,14 @@ to build the dutch version. Currently available: ca_ES  da_DK  de  en  es  fa  f
 Translating the QGIS Documentation
 **********************************
 
-Translating of the Documentation is handled via transifex: http://www.transifex.com
+Translating of the documentation is handled via transifex: http://www.transifex.com
 
 We ONLY translate the current stable version of QGIS.
 
 If you want to help translating: create an account and join one of the translation
 teams of the qgis project: https://www.transifex.com/organization/qgis
 
-Every language has it's own maintainer, please contact them, if you want to help.
+Every language has its own maintainer, so please contact them if you want to help.
 You find a list of current language maintainers at the end of this document. If
 your language is not listed, please contact the `QGIS-Community-Team Mailinglist
 <http://lists.osgeo.org/mailman/listinfo/qgis-community-team>`_ and ask for help.

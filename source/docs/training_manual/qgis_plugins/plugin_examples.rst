@@ -27,7 +27,7 @@ QGIS, and so you don't need to install it separately.
 
 * Open the :menuselection:`Raster` menu. You should see a
   :menuselection:`Terrain analysis` submenu.
-* Click on :menuselection:`Terrain analysis --> Relief` and input the following
+* Click on :menuselection:`Terrain analysis --> Relief` and use the default
   options:
 
   .. image:: /static/training_manual/qgis_plugins/terrain_analysis_dialog.png

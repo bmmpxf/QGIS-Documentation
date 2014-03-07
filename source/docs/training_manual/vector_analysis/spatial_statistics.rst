@@ -8,7 +8,7 @@ Spatial statistics allow you to analyze and understand what is going on in a
 given vector dataset. QGIS includes several standard tools for statistical
 analysis which prove useful in this regard.
 
-**The goal for this lesson:** To know how to use QGIS' spatial statistics
+**The goal for this lesson:** To know how to use QGIS spatial statistics
 tools.
 
 |basic| |FA| Create a Test Dataset
@@ -28,7 +28,7 @@ We'll use the area covered by streets.
   :kbd:`exercise_data/raster/SRTM/`.
 * Use the :guilabel:`Convex hull(s)` tool (available under
   :menuselection:`Vector --> Geoprocessing Tools`) to generate an area
-  enclosing all the roads:
+  enclosing all the roads (:guilabel:`Create a single minimum convex hull`)
 
 .. image:: /static/training_manual/vector_analysis/roads_hull_setup.png
    :align: center
@@ -41,7 +41,8 @@ Creating random points
 ...............................................................................
 
 * Create random points in this area using the tool at :menuselection:`Vector
-  --> Research Tools --> Random points`:
+  --> Research Tools --> Random points` (:guilabel:`Use this number of points`:
+  :kbd:`100`)
 
 .. image:: /static/training_manual/vector_analysis/random_points_setup.png
    :align: center
@@ -57,10 +58,11 @@ Sampling the data
 ...............................................................................
 
 * To create a sample dataset from the raster, you'll need to use the
-  :guilabel:`Point sampling tool` plugin.
-* Refer ahead to the module on plugins if necessary.
-* Search for the phrase :kbd:`point sampling` in the :guilabel:`Plugin --> Manage
-  and Install Plugins...` and you will find the plugin.
+  :guilabel:`Point sampling tool` plugin. Refer to the module on plugins if
+  necessary.
+* Navigate to :menuselection:`Plugin --> Manage and Install Plugins --> Get More`
+* Search for the phrase :kbd:`point sampling` and you will find the plugin.
+* Click :guilabel:`Install plugin`.
 * As soon as it has been activated with the :guilabel:`Plugin Manager`, you
   will find the tool under :menuselection:`Plugins --> Analyses --> Point
   sampling tool`:
@@ -107,50 +109,40 @@ Now get the basic statistics for this layer.
 .. note:: You can copy and paste the results into a spreadsheet. The data uses
    a (colon :kbd:`:`) separator.
 
-.. image:: /static/training_manual/vector_analysis/paste_to_spreadsheet.png
-   :align: center
+   .. image:: /static/training_manual/vector_analysis/paste_to_spreadsheet.png
+      :align: center
 
 * Close the plugin dialog when done.
 
 To understand the statistics above, refer to this definition list:
 
-Mean
-  The mean (average) value is simply the sum of the values divided by the
-  amount of values.
+**Mean**: The mean (average) value is simply the sum of the values divided by the
+amount of values.
 
-StdDev
-  The standard deviation. Gives an indication of how closely the values are
-  clustered around the mean. The smaller the standard deviation, the closer
-  values tend to be to the mean.
+**StdDev**:The standard deviation. Gives an indication of how closely the values
+are clustered around the mean. The smaller the standard deviation, the closer
+values tend to be to the mean.
 
-Sum
-  All the values added together.
+**Sum**: All the values added together.
 
-Min
-  The minimum value.
+**Min**: The minimum value.
 
-Max
-  The maximum value.
+**Max**: The maximum value.
 
-N
-  The amount of samples/values.
+**N**: The amount of samples/values.
 
-CV
-  The `spatial <http://en.wikipedia.org/wiki/Spatial_covariance>`_ `covariance
-  <http://en.wikipedia.org/wiki/Covariance>`_ of the dataset.
+**CV**: The `spatial <http://en.wikipedia.org/wiki/Spatial_covariance>`_
+`covariance <http://en.wikipedia.org/wiki/Covariance>`_ of the dataset.
 
-Number of unique values
-  The number of values that are unique across this dataset. If there are 90
-  unique values in a dataset with N=100, then the 10 remaining values are the
-  same as one or more of each other.
+**Number of unique values**: The number of values that are unique across this 
+dataset. If there are 90 unique values in a dataset with N=100, then the 10 
+remaining values are the same as one or more of each other.
 
-Range
-  The difference between the minimum and maximum values.
+**Range**: The difference between the minimum and maximum values.
 
-Median
-  If you arrange all the values from least to greatest, the middle value (or
-  the average of the two middle values, if N is an even number) is the median
-  of the values.
+**Median**: If you arrange all the values from least to greatest, the middle 
+value (or the average of the two middle values, if N is an even number) is the 
+median of the values.
 
 |basic| |FA| Compute a Distance Matrix
 -------------------------------------------------------------------------------

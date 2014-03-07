@@ -20,7 +20,7 @@ are numerous different landuse areas on the map.
 * Open the :guilabel:`Layer Properties` dialog for the :guilabel:`landuse` layer.
 * Go to the :guilabel:`Style` tab.
 * Click on the dropdown that says :guilabel:`Single Symbol` and change it to
-:guilabel:`Categorized`:
+  :guilabel:`Categorized`:
 
 .. image:: /static/training_manual/classification/categorised_styles.png
    :align: center
@@ -49,10 +49,10 @@ Now our landuse polygons are appropriately colored and are classified so that
 areas with the same land use are the same color. You may wish to remove the
 black border from the :guilabel:`landuse` layer:
 
-* Open :guilabel:`Layer Properties`, go to the :guilabel:`Style` tab and select
-  :guilabel:`Symbol`.
-* Change the symbol by removing the border from the :guilabel:`Simple Fill`
-  layer and click :guilabel:`OK`.
+* Open :guilabel:`Layer Properties` for the :guilabel:`landuse` layer, go to
+  the :guilabel:`Style` tab and click :guilabel:`Symbol`.
+* Change the symbol by removing the border (:guilabel:`No Pen`) from the
+  :guilabel:`Simple Fill` layer and click :guilabel:`OK`.
 
 You'll see that the landuse polygon outlines have been removed, leaving just our new
 fill colours for each categorisation.
@@ -91,18 +91,18 @@ the :guilabel:`building` column and use the :guilabel:`Spectral` color ramp.
 There are four types of classification: *nominal*, *ordinal*, *interval* and
 *ratio*.
 
-In nominal classification, the categories that objects are classified into are
+In *nominal* classification, the categories that objects are classified into are
 name-based; they have no order. For example: town names, district codes, etc.
 
-In ordinal classification, the categories are arranged in a certain order. For
+In *ordinal* classification, the categories are arranged in a certain order. For
 example, world cities are given a rank depending on their importance for world
 trade, travel, culture, etc.
 
-In interval classification, the numbers are on a scale with positive, negative
+In *interval* classification, the numbers are on a scale with positive, negative
 and zero values. For example: height above/below sea level, temperature
 above/below freezing (0 degrees Celsius), etc.
 
-In ratio classification, the numbers are on a scale with only positive and zero
+In *ratio* classification, the numbers are on a scale with only positive and zero
 values. For example: temperature above absolute zero (0 degrees Kelvin),
 distance from a point, the average amount of traffic on a given street per
 month, etc.
@@ -123,17 +123,16 @@ saved.
 We want to classify the landuse areas by size, but there's a problem: they don't
 have a size field, so we'll have to make one.
 
-* Enter edit mode by clicking this button:
-
-   |edit|
-   :align: center
+* Enter edit mode by clicking this button: |edit|
 
 * Add a new column with this button:
 
 .. image:: /static/training_manual/labels/add_column_button.png
    :align: center
 
-* Set up the dialog that appears, like this:
+* Set up the dialog that appears: :guilabel:`Name` of :kbd:`AREA`, :guilabel:`Type`
+  of :kbd:`Decimal number (double)`, and both :guilabel:`Width` and
+  :guilabel:`Precision` of :kbd:`5`.
 
 .. image:: /static/training_manual/classification/add_area_column.png
    :align: center
@@ -146,17 +145,15 @@ just has a lot of :kbd:`NULL` values.
 
 To solve this problem, we'll need to calculate the areas.
 
-* Open the field calculator:
-
-|mActionCalculateField|
-    :align: center
+* Open the field calculator by clicking this button: |mActionCalculateField|
 
 You'll get this dialog:
 
 .. image:: /static/training_manual/classification/calculate_field_dialog.png
    :align: center
 
-* Change the values at the top of the dialog to look like this:
+* Change the values at the top of the dialog to :guilabel:`Update existing field`
+  :guilabel:`AREA`:
 
 .. image:: /static/training_manual/classification/field_calculator_top.png
    :align: center
@@ -214,7 +211,7 @@ Now you'll have something like this:
 
 Leave everything else as-is.
 
-* Click :guilabel:`Ok`:
+* Click :guilabel:`OK`:
 
 .. image:: /static/training_manual/classification/gradient_result_map.png
    :align: center
@@ -248,9 +245,11 @@ That's where rule-based classification comes in handy.
 * Click the :guilabel:`Add rule` button: |mActionSignPlus|.
 * A new dialog then appears.
 * Click the ellipsis :guilabel:`...` button next to the :guilabel:`Filter` text area.
-* Using the query builder that appears, enter the criterion
-  :kbd:`"landuse" = 'residential' AND "name" != ' |majorUrbanName| '` ,
-  click :guilabel:`Ok` and choose a pale blue-grey for it and
+* Using the query builder that appears, enter the criterion:
+
+    "landuse" = 'residential' AND "name" != ' |majorUrbanName| '
+
+* Click :guilabel:`OK` and choose a pale blue-grey for it and
   remove the border:
 
 .. image:: /static/training_manual/classification/query_builder_example.png
@@ -259,12 +258,19 @@ That's where rule-based classification comes in handy.
 .. image:: /static/training_manual/classification/rule_style_result.png
    :align: center
 
-* Add a new criterion :kbd:`"landuse" != 'residential' AND AREA >= 0.00005`
+* Add a new criterion:
+
+    "landuse" != 'residential' AND AREA >= 0.00005
+
   and choose a mid-green color.
-* Add another new criterion :kbd:`"name"  =  ' |majorUrbanName| '` and assign it
-  a darker grey-blue color in order to indicate the town's importance in the
-  region.
-* Click and drag this criterion to the top of the list.
+
+* Add another new criterion:
+
+    "name"  =  ' |majorUrbanName| '
+
+  and assign it a darker grey-blue color in order to indicate the town's importance in the
+  region. Click and drag this criterion to the top of the list.
+
 
 These filters are exclusive, in that they collectively exclude some areas on the
 map (i.e. those which are smaller that 0.00005, are not residential and are not

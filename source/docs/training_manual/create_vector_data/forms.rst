@@ -27,17 +27,16 @@ rather than needing to search for a specific street in the :guilabel:`Attribute
 Table` all the time.
 
 * Go to the :menuselection:`Settings --> Options` menu.
-* In the dialog that appears, select the :guilabel:`Map Tools` tab.
-* Check the :guilabel:`Open feature form ...` checkbox:
+* In the dialog that appears, select :guilabel:`Map Tools` along the left-side.
+* Check the :guilabel:`Open feature form, if a single feature is identified`
+  checkbox:
 
 .. image:: /static/training_manual/create_vector_data/open_feature_form.png
    :align: center
 
-* Click :guilabel:`Ok`.
+* Click :guilabel:`OK`.
 * Select the :guilabel:`roads` layer in the :guilabel:`Layers list`.
-* Using the :guilabel:`Identify` tool, click on any street in the map.
-
-  |mActionIdentify|
+* Using the :guilabel:`Identify` tool |mActionIdentify|, click on any street in the map.
 
 Instead of the normal :guilabel:`Identify` dialog, you'll see the now-familiar
 form instead:
@@ -57,7 +56,7 @@ If you are in edit mode, you can use this form to edit a feature's attributes.
 .. image:: /static/training_manual/create_vector_data/main_street_selected.png
    :align: center
 
-* Edit its :guilabel:`highway` value to be :kbd:`secondary`.
+* Edit its :guilabel:`highway` value to be :kbd:`tertiary`.
 * Save your edits.
 * Exit edit mode.
 * Open the :guilabel:`Attribute Table` and note that the value has been updated
@@ -108,10 +107,12 @@ Set a more appropriate form widget for the :guilabel:`highway` field.
 
 You can also design your own custom form completely from scratch.
 
-* Create a simple point layer named :kbd:`test-data` with two attributes:
+* Create a simple point layer named :kbd:`test-data` with only two attributes:
 
   * Name (text)
   * Age (text)
+
+* Remove the existing :guilabel:`id` attribute.
 
 .. image:: /static/training_manual/create_vector_data/new_point_layer.png
    :align: center

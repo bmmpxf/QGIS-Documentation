@@ -79,13 +79,15 @@ different CRSs.
   * Clicking :guilabel:`OK`.
   
 * In QGIS 2.0, the 'on the fly' reprojection is automatically activated when
-layers with different CRSs are loaded in the map. To understand what
-'on the fly' reprojection does, deactivate this automatic setting:
+  layers with different CRSs are loaded in the map. To understand what
+  'on the fly' reprojection does, deactivate this automatic setting:
+
   * Go to :menuselection:`Settings --> Options...`
   * On the left panel of the dialog, select :guilabel:`CRS`.
   * Un-check :guilabel:`Automatically enable 'on the fly' reprojection if layers
-  have different CRS`.
+    have different CRS`.
   * Click :guilabel:`OK`.
+
 * Add another vector layer to your map which has the data for South Africa
   only.  You'll find it as :kbd:`exercise_data/world/RSA.shp`.
  

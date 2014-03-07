@@ -56,8 +56,9 @@ data you create to be useful, you actually need to say something about the
 features you'll be creating in this new layer. For our current purposes, it
 will be enough to add one field called :kbd:`name`.
 
-* Replicate the setup below, then click the :guilabel:`Add to attributes list`
-  button:
+* Add a new attribute with the :guilabel:`Name` of :kbd:`name`, :guilabel:`Type`
+  of :kbd:`Text data`, and :guilabel:`Width` of :kbd:`80`. Then click the 
+  :guilabel:`Add to attributes list` button:
 
 .. image:: /static/training_manual/create_vector_data/new_attribute.png
    :align: center
@@ -90,8 +91,8 @@ or aerial photography.
 For our example, you'll be using the digitizing approach. Sample raster datasets
 are provided, so you'll need to import them as necessary.
 
-* Click on the :guilabel:`Add Raster Layer` button: |mActionAddRasterLayer|
-
+* Click on the :guilabel:`Add Raster Layer` button: |mActionAddRasterLayer|, or
+  navigate to :menuselection:`Layer --> Add Raster Layer`.
 * Navigate to :kbd:`exercise_data/raster/`.
 * Select the file :kbd:`3420C_2010_327_RGB_LATLNG.tif`.
 * Click :guilabel:`Open`. An image will load into your map.
@@ -110,6 +111,10 @@ are provided, so you'll need to import them as necessary.
 
 You'll be digitizing these three fields:
 
+* Rugby Field
+* Athletics Field
+* School Campus
+
 .. image:: /static/training_manual/create_vector_data/field_outlines.png
    :align: center
 
@@ -122,7 +127,7 @@ To enter edit mode for the :guilabel:`school_property` layer:
 * Click on the layer in the :guilabel:`Layer list` to select it. (Make very
   sure that the correct layer is selected, otherwise you'll edit the wrong
   layer!)
-* Click on the :guilabel:`Toggle Editing` button: |edit|
+* Click on the :guilabel:`Toggle Editing` button: |edit| (or right-click and select :guilabel:`Toggle Editing`)
 
 If you can't find this button, check that the :guilabel:`Digitizing` toolbar is
 enabled. There should be a check mark next to the :menuselection:`View -->
@@ -141,16 +146,16 @@ start interacting with our new data:
 
 From left to right on the toolbar, they are:
 
-- :guilabel:`Save Edits`: saves changes made to the layer.
-- :guilabel:`Add Feature`: start digitizing a new feature.
-- :guilabel:`Move Feature(s)`: move an entire feature around.
-- :guilabel:`Node Tool`: move only one part of a feature.
-- :guilabel:`Delete Selected`: delete the selected feature.
-- :guilabel:`Cut Features`: cut the selected feature.
-- :guilabel:`Copy Features`: copy the selected feature.
-- :guilabel:`Paste Features`: paste a cut or copied feature back into the map.
+- |mActionSaveEdits| :guilabel:`Save Edits`: Saves changes made to the layer.
+- |mActionCapturePolygon| :guilabel:`Add Feature`: Start digitizing a new feature.
+- |mActionMoveFeature| :guilabel:`Move Feature(s)`: Move an entire feature around.
+- |mActionNodeTool| :guilabel:`Node Tool`: Move only one part of a feature.
+- |mActionDeleteSelected| :guilabel:`Delete Selected`: Delete the selected feature.
+- |mActionEditCut| :guilabel:`Cut Features`: Cut the selected feature.
+- |mActionEditCopy| :guilabel:`Copy Features`: Copy the selected feature.
+- |mActionEditPaste| :guilabel:`Paste Features`: Paste a cut or copied feature back into the map.
 
-You want to add a new feature.
+We will to add a new feature.
 
 * Click on the :guilabel:`Add Feature` button now to begin digitizing our school
   fields.
@@ -172,7 +177,7 @@ The first feature you'll be digitizing is the |schoolAreaType1|:
   drawing completely covers the field.
 * After placing your last point, *right-click* to finish drawing the polygon.
   This will finalize the feature and show you the :guilabel:`Attributes` dialog.
-* Fill in the values as below:
+* Fill in the values :guilabel:`id` :kbd:`1` and :guilabel:`name` :kbd:`Athletics Field`:
 
 .. image:: /static/training_manual/create_vector_data/school_area_one_attributes.png
    :align: center
@@ -221,7 +226,7 @@ Remember that each new feature needs to have a unique :kbd:`id` value!
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-* Create a new line feature called :kbd:`routes.shp` with attributes :kbd:`id`
+* Create a new line layer called :kbd:`routes.shp` with attributes :kbd:`id`
   and :kbd:`type`. (Use the approach above to guide you.)
 * We're going to digitize two routes which are not already marked on the roads
   layer; one is a path, the other is a track.

@@ -37,14 +37,15 @@ property yet. First we'll create a field for this purpose.
 .. image:: /static/training_manual/create_vector_data/add_new_column.png
    :align: center
 
-* Enter the values below:
+* Enter the following values: :guilabel:`Name` of :kbd:`image`, :guilabel:`Type` 
+  of :kbd:`Text (string)`, and :guilabel:`Width` of :kbd:`255`:
 
 .. image:: /static/training_manual/create_vector_data/column_settings.png
    :align: center
 
 * After the field has been created, click on the :guilabel:`Line edit` button
   next to the new field.
-* Set it up for a :guilabel:`File name`:
+* Click on :guilabel:`File name`:
 
 .. image:: /static/training_manual/create_vector_data/select_file_name.png
    :align: center
@@ -72,7 +73,8 @@ this:
 |basic| |FA| Creating an Action
 -------------------------------------------------------------------------------
 
-* Open the :guilabel:`Actions` form for the :guilabel:`school_property` layer.
+* Open the :guilabel:`Actions` form for the :guilabel:`school_property` layer 
+  :guilabel:`Properties`.
 * In the :kbd:`Action properties` panel, enter the words :kbd:`Show Image` into
   the :guilabel:`Name` field:
 
@@ -101,7 +103,7 @@ MacOS
 ...............................................................................
 
 * Click on the :guilabel:`Type` dropdown and choose :guilabel:`Mac`.
-* Under :guilabel:`Action`, write :kbd:`open `. Remember to put a space after
+* Under :guilabel:`Action`, write :kbd:`open`. Remember to put a space after
   the command!
 
 
@@ -127,15 +129,12 @@ Now we will test the new Action:
 * Click on the :guilabel:`school_property` layer in the :guilabel:`Layers list`
   so that it is highlighted.
 * Find the :guilabel:`Run feature action` button (on the same toolbar as the
-  :guilabel:`Open Attribute Table` button):
-
-  |mAction|
-
+  :guilabel:`Open Attribute Table` button): |mAction|
 * Click on the down arrow to the right of this button. There's only one action
   defined for this layer so far, which is the one you just created.
 * Click the button itself to activate the tool.
 * Using this tool, click on any of the three school properties.
-* The image for that property will now open.
+* The image for that property will now open in your local image viewer.
 
 |moderate| |FA| Searching the Internet
 -------------------------------------------------------------------------------
@@ -211,6 +210,9 @@ This will tell QGIS to add the phrase next:
 .. image:: /static/training_manual/create_vector_data/google_search_entry.png
    :align: center
 
+.. note:: The image above is for Mac OS only. Windows users should not include 
+   the word "open" in the Action.
+
 What this means is that QGIS is going to open the browser and send it to the
 address :kbd:`http://www.google.com/search?q=[% "name" %]`. But :kbd:`[%
 "name" %]` tells QGIS to use the contents of the :kbd:`name` field as the
@@ -268,6 +270,7 @@ To create the layer action:
 * Open the :guilabel:`Layer Properties` dialog and head over to the
   :guilabel:`Actions` tab.
 * Set up a new action using the following properties for the action:
+
   * :guilabel:`Type`: :kbd:`Python`
   * :guilabel:`Name`: :kbd:`Wikipedia`
   * :guilabel:`Action` (all on one line):

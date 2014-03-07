@@ -1,10 +1,8 @@
-
 .. _QGIS-training-manual-index-reference:
 
 ====================
 QGIS Training Manual
 ====================
-
 
 .. toctree::
    :maxdepth: 2
@@ -29,11 +27,3 @@ QGIS Training Manual
    appendix/contribute
 
    answers/answers
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

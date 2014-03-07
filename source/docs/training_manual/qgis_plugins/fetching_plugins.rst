@@ -12,7 +12,7 @@ and :guilabel:`Plugin Manager`.
 
 * To open the :guilabel:`Plugin Manager`, click on the menu item
   :menuselection:`Plugins --> Manage and Install Plugins`.
-* In the dialog that opens, find the :guilabel:`Processing` plugin:
+* Under the :guilabel:`Installed` tab, find the :guilabel:`Processing` plugin:
 
   .. image:: /static/training_manual/qgis_plugins/select_processing_plugin.png
      :align: center
@@ -36,19 +36,20 @@ and :guilabel:`Plugin Manager`.
 The list of plugins that you can activate and deactivate draws from the plugins
 that you currently have installed. 
 
-* To install new plugins, select the :guilabel:`Not Installed` option in the
+* To install new plugins, select the :guilabel:`Get More` (on some versions 
+  :guilabel:`Not Installed`) option in the
   :guilabel:`Plugin Manager` dialog. The plugins available for you to install
   will be listed here. This list will vary depending on your existing system
   setup.
 
-  .. image:: /static/training_manual/qgis_plugins/get_more_plugins.png
-     :align: center
+.. image:: /static/training_manual/qgis_plugins/get_more_plugins.png
+   :align: center
 
 * You can find information about each plugin by selecting it in the list of
   plugins displayed.
 
-  .. image:: /static/training_manual/qgis_plugins/plugin_details.png
-     :align: center
+.. image:: /static/training_manual/qgis_plugins/plugin_details.png
+   :align: center
 
 * A plugin can be installed by clicking the :guilabel:`Install Plugin` button
   below the plugin information panel.

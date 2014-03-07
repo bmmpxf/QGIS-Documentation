@@ -1,7 +1,7 @@
-|LS| Web Mapping Services
+|LS| Web Map Services
 ===============================================================================
 
-A Web Mapping Service (WMS) is a service hosted on a remote server. Similar to
+A Web Map Service (WMS) is a service hosted on a remote server. Similar to
 a website, you can access it as long as you have a connection to the server.
 Using QGIS, you can load a WMS directly into your existing map.
 

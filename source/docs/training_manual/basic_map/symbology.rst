@@ -38,7 +38,8 @@ In the :guilabel:`Properties` window:
 .. image:: /static/training_manual/symbology/layer_properties_style.png
    :align: center
 
-* Click the color select button next to the :guilabel:`Color` label.
+* Click the color select button next to the :guilabel:`Color` label. The
+  button will be the same color as the layer feature's current color. 
 
 A standard color dialog will appear.
 
@@ -126,16 +127,15 @@ To enable scale-based rendering:
 .. image:: /static/training_manual/symbology/scale_dependent_visibility.png
    :align: center
 
-* Change the :guilabel:`Maximum` value to :kbd:`1:10,000`.
+* Change the :guilabel:`Minimum` value to :kbd:`1:10000`.
 * Click :guilabel:`OK`.
 
 Test the effects of this by zooming in and out in your map, noting when the
 :guilabel:`buildings` layer disappears and reappears.
 
 .. note::  You can use your mouse wheel to zoom in increments.
-   Alternatively, use the zoom tools to zoom to a window:
-
-   |mActionZoomIn| |mActionZoomOut|
+   Alternatively, use the zoom tools to zoom to a window: |mActionZoomIn| 
+   |mActionZoomOut|
 
 |moderate| |FA| Adding Symbol Layers
 -------------------------------------------------------------------------------
@@ -214,10 +214,10 @@ having many symbol layers in one symbol can cause unexpected results.
 
 * Give the :guilabel:`roads` layer an extra symbol layer (using the method
   for adding symbol layers demonstrated above).
-* Give the base line a :guilabel:`Pen width` of :kbd:`0.3`, a white color
-  and select :guilabel:`Dashed Line` from the :guilabel:`Pen Style` dropdown.
-* Give the new, uppermost layer a thickness of :kbd:`1.3` and ensure that it is
-  a :guilabel:`Solid Line`.
+* Give the base line a :guilabel:`Pen width` of :kbd:`0.3` mm, a white color
+  and select :guilabel:`Dash Line` from the :guilabel:`Pen Style` dropdown.
+* Give the new, uppermost layer a thickness of :kbd:`1.3` mm, a black color, 
+  and ensure that it is a :guilabel:`Solid Line`.
 
 You'll notice that this happens:
 
@@ -328,20 +328,18 @@ Point Symbol Layer Types
 .. image:: /static/training_manual/symbology/places_layer_properties.png
    :align: center
 
-* You can access the various symbol layer types by selecting the
-:guilabel:`Simple marker` layer in the :guilabel:`Symbol layers` panel, then
-click the :guilabel:`Symbol layer type` dropdown:
-
+* You can access the various symbol layer types by selecting the 
+  :guilabel:`Simple marker` layer in the :guilabel:`Symbol layers` panel, then
+  click the :guilabel:`Symbol layer type` dropdown:
 
 .. image:: /static/training_manual/symbology/marker_type_dropdown.png
    :align: center
 
-
 * Investigate the various options available to you, and choose a symbol with
   styling you think is appropriate.
 * If in doubt, use a round :guilabel:`Simple marker` with a white border and
-  pale green fill, with a :guilabel:`size` of :kbd:`3,00` and an
-  :guilabel:`Outline width` of :kbd:`0.5`.
+  pale green fill, with a :guilabel:`size` of :kbd:`3` mm and an
+  :guilabel:`Outline width` of :kbd:`0.5` mm.
 
 
 Line Symbol Layer Types
@@ -355,26 +353,21 @@ To see the various options available for line data:
 .. image:: /static/training_manual/symbology/change_to_marker_line.png
    :align: center
 
-
 * Select the :guilabel:`Simple marker` layer in the :guilabel:`Symbol layers`
   panel. Change the symbol properties to match this dialog:
-
 
 .. image:: /static/training_manual/symbology/simple_marker_line_properties.png
    :align: center
 
-
-* Change the interval to :kbd:`1,00`:
-
+* Change the interval to :kbd:`1`:
 
 .. image:: /static/training_manual/symbology/marker_line_interval.png
    :align: center
 
 
 * Ensure that the symbol levels are correct (via the
-:guilabel:`Advanced -> Symbol levels` dialog we used earlier) before applying
-the style.
-
+  :guilabel:`Advanced -> Symbol levels` dialog we used earlier) before applying
+  the style.
 
 Once you have applied the style, take a look at its results on the map. As you
 can see, these symbols change direction along with the road but don't always
